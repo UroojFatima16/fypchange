@@ -238,7 +238,7 @@
                 android:hint="Book Name"
                 android:padding="12dp"
                 android:paddingStart="20dp"
-                android:textColor="@color/text_hint"
+                android:textColor="@color/black"
                 android:textColorHint="@color/text_hint" />
 
             <EditText
@@ -251,7 +251,7 @@
                 android:hint="Author"
                 android:padding="12dp"
                 android:paddingStart="20dp"
-                android:textColor="@color/text_hint"
+                android:textColor="@color/black"
                 android:textColorHint="@color/text_hint" />
 
             <EditText
@@ -265,8 +265,38 @@
                 android:padding="24dp"
                 android:paddingStart="20dp"
                 android:paddingEnd="10dp"
-                android:textColor="@color/text_hint"
+                android:textColor="@color/black"
                 android:textColorHint="@color/text_hint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_marginVertical="10dp">
+                <TextView
+                    android:id="@+id/tvheading5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:text="Show my phone number on the post "
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/phoneswitch"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/phoneswitch" />
+
+                <androidx.appcompat.widget.SwitchCompat
+                    android:id="@+id/phoneswitch"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/tvheading5"
+                    app:layout_constraintTop_toBottomOf="@+id/viewseparator3" />
+            </LinearLayout>
+
+
 
             <Button
                 android:id="@+id/uploadData"
@@ -307,13 +337,14 @@
                 android:text="@string/get_more_bu"
                 android:textColor="@color/text_hint" />
 
+
             <Button
                 android:id="@+id/featurePost"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
-                android:background="@drawable/button_round_corner"
+                android:background="@drawable/round_corner"
                 android:backgroundTint="@color/feature_post"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"
@@ -322,7 +353,8 @@
                 android:layout_marginBottom="30dp"
                 android:text="@string/Add_fea_Post"
                 android:textColor="@color/white"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                />
 
         </LinearLayout>
 

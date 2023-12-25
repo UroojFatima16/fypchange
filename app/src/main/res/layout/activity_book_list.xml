@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="5dp"
     android:background="@color/white"
     android:padding="5dp">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
+        android:layout_width="100dp"
+        android:layout_height="110dp"
         android:layout_alignParentStart="true"
         android:layout_marginVertical="3dp"
         android:layout_marginStart="5dp"
@@ -95,7 +94,6 @@
         android:layout_below="@+id/price"
         android:layout_alignStart="@+id/bookname"
         android:layout_marginStart="96dp"
-        android:layout_marginTop="5dp"
         android:maxLines="1"
         android:text="@string/date"
         android:textSize="14sp" />
@@ -108,5 +106,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
       android:background="@color/gray"
-        android:layout_marginTop="26dp" />
+        android:layout_marginTop="16dp" />
+    <View
+        android:id="@+id/line_7"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_below="@+id/line_6"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/gray"
+        android:layout_marginTop="2dp" />
 </RelativeLayout>
